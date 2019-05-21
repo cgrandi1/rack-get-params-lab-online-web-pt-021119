@@ -41,9 +41,8 @@ class Application
 
       item = req.params["item"]
 
-      if @@cart.include?(item)
-        @@cart << item
-        binding.pry
+      if @@item.include?(item)
+        @@ << item
         resp.write "added #{item}"
       else
         resp.write "We don't have that item"
