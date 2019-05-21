@@ -53,7 +53,7 @@ class Application
 
     resp.finish
   end
-end 
+end
 
 
 
@@ -72,4 +72,3 @@ end
   #     return "#{search_term} is one of our items"
   #   else
   #     return "Couldn't find #{search_term}"
- end
