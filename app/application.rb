@@ -41,8 +41,6 @@ class Application
 
       item = req.params["item"]
       
-
-
       if @@cart.include?(item)
         @@cart << item
         resp.write "added #{item}"
