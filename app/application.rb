@@ -40,8 +40,9 @@ class Application
     elsif req.path.match(/add/)
 
       item = req.params["item"]
-      
+
       if @@cart.include?(item)
+        binding.pry
         @@cart << item
         resp.write "added #{item}"
       else
