@@ -24,7 +24,7 @@ class Application
     elsif req.path.match(/search/)
 
       search_term = req.params["q"]
-    end
+    
 
       if @@cart.include?(search_term)
         resp.write "#{search_term}"
@@ -44,7 +44,7 @@ class Application
       else
         resp.write "We don't have that item"
       end
-      
+
     else
       resp.write "Path not found"
     end
