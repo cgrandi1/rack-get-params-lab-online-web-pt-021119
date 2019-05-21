@@ -50,6 +50,8 @@ class Application
     else
       resp.write "Path not found"
     end
+
+    resp.finish
   end
 
 
