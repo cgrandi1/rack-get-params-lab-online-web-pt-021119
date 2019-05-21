@@ -38,7 +38,7 @@ class Application
     elsif req.path.match(/add/)
 
       item = req.param["q"]
-    end
+    
 
       if @@cart.include?(item)
         @@cart << item
