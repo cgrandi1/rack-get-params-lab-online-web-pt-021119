@@ -24,7 +24,7 @@ class Application
     elsif req.path.match(/search/)
 
       search_term = req.params["q"]
-    end 
+    end
 
       if @@cart.include?(search_term)
         resp.write "#{search_term}"
