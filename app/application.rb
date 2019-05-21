@@ -1,5 +1,7 @@
-class Application
 require 'pry'
+
+class Application
+
   @@item = ["Apples","Carrots","Pears"]
   @@cart = []
 
