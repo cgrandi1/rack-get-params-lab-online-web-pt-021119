@@ -15,7 +15,7 @@ class Application
     elsif req.path.match(/cart/)
       @@cart.each do |list|
         resp.write "#{list}\n"
-      
+      end
 
       if @@cart.empty?
         resp.write "Your cart is empty"
@@ -24,7 +24,7 @@ class Application
     elsif req.path.match(/search/)
 
       search_term = req.params["q"]
-    
+
 
       if @@cart.include?(search_term)
         resp.write "#{search_term}"
